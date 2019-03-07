@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>ToDoList</title>
+</head>
+
+<body>
+    <header>
+        <h2>My To Do List</h2>
+        <form onsubmit="formSubmitted(event)" id="main-form">
+            <input type="text" name="inputNoteText" id="inputNoteText" placeholder="Add Note"/>
+            <input type="hidden" name="id" id="id"/>
+            <input type="submit" id="btnAdd" value="Add"/>
+            <input type="submit" id="btnSave" value="Save"/>
+        </form>
+    </header>
+
+    <ul id="list">
+        
+    </ul>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
